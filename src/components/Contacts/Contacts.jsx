@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List, Element, Text, Button } from './Contacts.styled';
+import { List, Element, Text, Button } from './ContactsStyled';
 
 export default function Contacts({ contacts, onDeleteContacts }) {
   return (

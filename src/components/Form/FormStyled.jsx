@@ -8,7 +8,7 @@ export const FormPhonebook = styled.form`
 export const Input = styled.input`
   width: 270px;
   height: 20px;
-  margin-bottom: 16px;
+  margin-bottom: ${p => p.theme.space[4]}px;
 `;
 
 export const Label = styled.label`
@@ -30,7 +30,7 @@ export const Button = styled.button`
   box-shadow: 0px 3px 5px 1px rgba(45, 90, 124, 0.2);
   transition: background-color 250ms linear, transform 250ms ease-in-out;
 
-  &:hover {
+  :hover {
     background-color: rgb(0, 149, 255);
     color: #ffffff;
     transform: scale(1.08);

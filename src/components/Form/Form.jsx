@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormPhonebook, Input, Label, Button } from './Form.styled';
+import { FormPhonebook, Input, Label, Button } from './FormStyled';
 
 export default class Form extends Component {
   state = {

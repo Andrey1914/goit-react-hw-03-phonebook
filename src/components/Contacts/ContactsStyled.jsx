@@ -3,7 +3,8 @@ import styled from '@emotion/styled';
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: ${p => p.theme.space[6]}px;
+  padding: 0;
   list-style-type: disc;
 `;
 
@@ -12,13 +13,13 @@ export const Element = styled.li`
   justify-content: space-between;
   align-items: center;
 
-  &:not(:last-child) {
-    margin-bottom: 15px;
+  :not(:last-child) {
+    margin-bottom: ${p => p.theme.space[4]}px;
   }
 `;
 
 export const Text = styled.p`
-  margin-right: 20px;
+  margin-right: ${p => p.theme.space[4]}px;
 `;
 
 export const Button = styled.button`
@@ -34,7 +35,7 @@ export const Button = styled.button`
   box-shadow: 0px 3px 5px 1px rgba(45, 90, 124, 0.2);
   transition: background-color 250ms linear, transform 250ms ease-in-out;
 
-  &:hover {
+  :hover {
     background-color: rgb(255, 0, 0);
     color: #ffffff;
     transform: scale(1.08);
