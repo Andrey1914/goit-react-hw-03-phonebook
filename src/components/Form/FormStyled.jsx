@@ -12,6 +12,9 @@ export const Input = styled.input`
 `;
 
 export const Label = styled.label`
+  font-family: ${p => p.theme.fonts.body};
+  font-weight: ${p => p.theme.fontWeights.normal};
+  color: ${p => p.theme.colors.text};
   display: flex;
   justify-content: space-between;
 `;

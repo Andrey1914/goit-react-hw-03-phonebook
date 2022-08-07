@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Global, css } from '@emotion/react';
 
 import { nanoid } from 'nanoid';
 import Section from './Section/Section';
@@ -6,6 +7,12 @@ import Container from './Container/Container';
 import Filter from './Filter/Filter';
 import Form from './Form/Form';
 import Contacts from './Contacts/Contacts';
+
+const GlobalStyles = css`
+  h1 {
+    margin: 0;
+  }
+`;
 
 export default class App extends Component {
   state = {
@@ -61,6 +68,7 @@ export default class App extends Component {
     const visibleContacts = this.getVisibleContacts();
     return (
       <Container>
+        <Global styles={GlobalStyles} />
         <Section title="Phonebook">
           <Form onRiseContact={this.addContact} />
         </Section>

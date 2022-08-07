@@ -19,6 +19,9 @@ export const Element = styled.li`
 `;
 
 export const Text = styled.p`
+  font-family: ${p => p.theme.fonts.body};
+  font-weight: ${p => p.theme.fontWeights.normal};
+  color: ${p => p.theme.colors.text};
   margin-right: ${p => p.theme.space[4]}px;
 `;
 
