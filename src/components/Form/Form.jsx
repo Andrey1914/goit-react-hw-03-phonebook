@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { FormPhonebook, Input, Label, Button } from './FormStyled';
+// import { Button } from 'components/Button/Button';
+import { IoMdPersonAdd } from 'react-icons/io';
 
 export default class Form extends Component {
   state = {
@@ -49,7 +51,10 @@ export default class Form extends Component {
             required
           />
         </Label>
-        <Button type="submit">Add contact</Button>
+        <Button type="submit">
+          Add contact
+          <IoMdPersonAdd size={20} />
+        </Button>
       </FormPhonebook>
     );
   }

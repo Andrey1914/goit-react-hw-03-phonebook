@@ -4,7 +4,6 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   margin-top: ${p => p.theme.space[6]}px;
-  padding: 0;
   list-style-type: disc;
 `;
 
@@ -22,25 +21,26 @@ export const Text = styled.p`
   font-family: ${p => p.theme.fonts.body};
   font-weight: ${p => p.theme.fontWeights.normal};
   color: ${p => p.theme.colors.text};
-  margin-right: ${p => p.theme.space[4]}px;
 `;
 
 export const Button = styled.button`
-  font-size: 16px;
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: ${p => p.theme.space[2]}px;
+  padding-left: ${p => p.theme.space[4]}px;
   height: 30px;
-  padding: 5px;
   cursor: pointer;
-  border: none;
-  border-radius: 3px;
-  outline: none;
-  background-color: rgb(255, 136, 136);
-  box-shadow: 0px 3px 5px 1px rgba(45, 90, 124, 0.2);
+  border: ${p => p.theme.borders.none};
+  border-radius: ${p => p.theme.radii.normal};
   transition: background-color 250ms linear, transform 250ms ease-in-out;
-
-  :hover {
-    background-color: rgb(255, 0, 0);
-    color: #ffffff;
+  background-color: rgb(101, 227, 255);
+  box-shadow: 0px 3px 5px 1px rgba(45, 90, 124, 0.2);
+  :hover,
+  :focus {
+    background-color: rgb(0, 149, 255);
+    color: ${p => p.theme.colors.textHover};
     transform: scale(1.08);
   }
 `;

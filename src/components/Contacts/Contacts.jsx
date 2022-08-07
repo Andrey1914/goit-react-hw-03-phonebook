@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import { List, Element, Text, Button } from './ContactsStyled';
+// import { Button } from 'components/Button/Button';
+import { MdDelete } from 'react-icons/md';
 
 export default function Contacts({ contacts, onDeleteContacts }) {
   return (
@@ -12,6 +14,7 @@ export default function Contacts({ contacts, onDeleteContacts }) {
             </Text>
             <Button type="button" onClick={() => onDeleteContacts(id)}>
               Delete
+              <MdDelete size={20} />
             </Button>
           </Element>
         );
