@@ -2,7 +2,8 @@ export const theme = {
   colors: {
     text: '#000',
     textHover: '#fff',
-    background: '#fff',
+    bgc: 'rgb(101, 227, 255)',
+    bgcHover: 'rgb(0, 149, 255)',
     primary: '#07c',
     secondary: '#05a',
     accent: '#609',

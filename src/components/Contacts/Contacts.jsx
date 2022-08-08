@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { List, Element, Text, Button } from './ContactsStyled';
-// import { Button } from 'components/Button/Button';
+import { List, Element, Text } from './ContactsStyled';
+import { Button } from 'components/Button/Button';
 import { MdDelete } from 'react-icons/md';
 
 export default function Contacts({ contacts, onDeleteContacts }) {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Global, css } from '@emotion/react';
+import { Global } from '@emotion/react';
+import { GlobalStyles } from './GlobalStyles';
 
 import { nanoid } from 'nanoid';
 import Section from './Section/Section';
@@ -7,16 +8,6 @@ import Container from './Container/Container';
 import Filter from './Filter/Filter';
 import Form from './Form/Form';
 import Contacts from './Contacts/Contacts';
-
-const GlobalStyles = css`
-  h1,
-  label,
-  ul,
-  p {
-    margin: 0;
-    padding: 0;
-  }
-`;
 
 export default class App extends Component {
   state = {

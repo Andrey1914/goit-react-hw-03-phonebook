@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FormPhonebook, Input, Label, Button } from './FormStyled';
-// import { Button } from 'components/Button/Button';
+import { FormPhonebook, Input, Label } from './FormStyled';
+import { Button } from 'components/Button/Button';
 import { IoMdPersonAdd } from 'react-icons/io';
 
 export default class Form extends Component {
