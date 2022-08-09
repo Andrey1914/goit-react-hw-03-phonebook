@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { FormPhonebook, Input, Label } from './FormStyled';
+import { Input, Label } from './FormStyled';
 import { Button } from 'components/Button/Button';
 import { IoMdPersonAdd } from 'react-icons/io';
+import { Box } from 'components/Box';
 
 export default class Form extends Component {
   state = {
@@ -26,7 +27,13 @@ export default class Form extends Component {
 
   render() {
     return (
-      <FormPhonebook onSubmit={this.handleSubmit}>
+      // <form onSubmit={this.handleSubmit}>
+      <Box
+        as="form"
+        onSubmit={this.handleSubmit}
+        display="flex"
+        flexDirection="column"
+      >
         <Label>
           Name
           <Input
@@ -55,7 +62,8 @@ export default class Form extends Component {
           Add contact
           <IoMdPersonAdd size={20} />
         </Button>
-      </FormPhonebook>
+      </Box>
+      // </form>
     );
   }
 }

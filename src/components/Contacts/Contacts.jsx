@@ -1,14 +1,22 @@
 import PropTypes from 'prop-types';
-import { List, Element, Text } from './ContactsStyled';
+import { Text } from './ContactsStyled';
 import { Button } from 'components/Button/Button';
 import { MdDelete } from 'react-icons/md';
+import { Box } from 'components/Box';
 
 export default function Contacts({ contacts, onDeleteContacts }) {
   return (
-    <List>
+    <Box as="ul" display="flex" flexDirection="column" px={5}>
       {contacts.map(({ id, name, number }) => {
         return (
-          <Element key={id}>
+          <Box
+            key={id}
+            as="li"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            mb={4}
+          >
             <Text>
               {name}&#32;:&#32;{number}
             </Text>
@@ -16,10 +24,10 @@ export default function Contacts({ contacts, onDeleteContacts }) {
               Delete
               <MdDelete size={20} />
             </Button>
-          </Element>
+          </Box>
         );
       })}
-    </List>
+    </Box>
   );
 }
 

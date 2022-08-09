@@ -6,4 +6,5 @@ export const Label = styled.label`
   color: ${p => p.theme.colors.text};
   display: flex;
   justify-content: space-between;
+  margin-bottom: ${p => p.theme.space[5]}px;
 `;

@@ -1,12 +1,13 @@
+import { Box } from 'components/Box';
 import PropTypes from 'prop-types';
-import { SectionPhonebook, Title } from './SectionStyled';
+import { Title } from './SectionStyled';
 
 export default function Section({ children, title }) {
   return (
-    <SectionPhonebook>
+    <Box as="section" p={4}>
       <Title>{title}</Title>
       {children}
-    </SectionPhonebook>
+    </Box>
   );
 }
 

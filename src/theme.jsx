@@ -9,7 +9,7 @@ export const theme = {
     accent: '#609',
     muted: '#f6f6f6',
   },
-  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
+  space: [0, 2, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: 'Roboto, Oxygen, sans-serif',
     heading: 'Roboto, Oxygen, sans-serif',

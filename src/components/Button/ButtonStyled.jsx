@@ -19,6 +19,6 @@ export const StyledButton = styled.button`
   :focus {
     background-color: ${p => p.theme.colors.bgcHover};
     color: ${p => p.theme.colors.textHover};
-    transform: scale(1.08);
+    transform: scale(1.02);
   }
 `;
